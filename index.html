@@ -1,0 +1,233 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Personal Portfolio Website</title>
+    <link rel="stylesheet" href="style.css">
+
+    <script src="https://kit.fontawesome.com/aa50f7ca42.js" crossorigin="anonymous"></script>
+</head>
+<body>
+    <div id="header">
+    <div class="container">
+        <nav>
+            <img src="images/logo.png" class="logo">
+            <ul id="sidemenu">
+                <li><a href="#header">Home</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#services">Services</a></li>
+                <li><a href="#portfolio">Portfolio</a></li>
+                <li><a href="#contact">Contact</a></li>
+                <i class="fas fa-times" onclick="closemenu()"></i> <!-- Corrected the class name -->
+            </ul>
+          
+            <i class="fas fa-bars" onclick="openmenu()"></i> <!-- Corrected the onclick attribute -->
+        </nav>
+        <div class="header-text">
+            <p>UI/UX Designer</p>
+            <h1>Hi, I 'm <span>Chitra</span> From India</h1>
+        </div>     
+    </div>
+  <!----------------------about-------------------->
+    </div>
+   <div id="about">
+    <div class="container">
+        <div class="row">
+            <div class="about-col-1">
+                <img src="images/background1.jpeg" alt="">
+            </div>
+            <div class="about-col-2">
+                <h1 class="sub-title">About Me</h1>
+                <p>My name is chitra. I have completed btech from bscaet.Currntly<br>I am looking for new role. I have experienced as a java developer </p> <!-- Corrected the typo -->
+            <div class="tab-titles">
+                <!-- <p>Skills</p> -->
+                <p class="tab-links active-link" onclick="opentab('skills')">Skills</p>
+                <p class="tab-links" onclick="opentab('experience')">Experience</p>
+                <p class="tab-links" onclick="opentab('education')">Education</p>
+
+            </div>
+            <div class="tab-contents active-tab" id="skills">
+                <ul>
+                    <li><span>UI-UX</span><br>Designing Web/App interfaces</li>
+                    <li><span>Web development</span><br>Designing Web App development </li> <!-- Corrected the typo -->
+                    <li><span>App development</span><br> building an App</li> <!-- Corrected the typo -->
+                </ul>
+            </div>
+            <div class="tab-contents" id ="experience">
+                <ul>
+                    <li><span>2021</span><br>Android Developer </li> <!-- Corrected the typo -->
+                
+                </ul>
+            </div>
+            <div class="tab-contents" id="education">
+                <ul>
+                    <li><span>2022</span><br>Btech from BSACET </li>
+                    <li><span>2016</span><br>10th</li>
+                    <li><span>2014</span><br>12th</li>
+         
+                </ul>
+            </div>
+             
+             
+        </div>
+    </div>
+   </div>
+    <!-- --------------------------services----------------------- -->
+    <div id="services">
+        <div class="container">
+            <h1 class="sub-title">My Services</h1>
+            <div class="services-list">
+                <div>
+                    <i class="fas fa-code"></i> <!-- Corrected the class name -->
+                    <h2>Web Design</h2>
+                    <p>chitra is a girl. she  is very nice girl . I am self observe person </p>
+                    <a href="#">Learn more </a>
+                </div>
+                <div>
+                    <i class="fas fa-crop-simple"></i> <!-- Corrected the class name -->
+                    <h2>UI/UX Design</h2>
+                    <p>chitra is a girl. she  is very nice girl . I am self observe person </p>
+                    <a href="#">Learn more </a>
+                </div>
+                <div>
+                    <i class="fab fa-app-store"></i> <!-- Corrected the class name -->
+                    <h2>App Design</h2>
+                    <p>chitra is a girl. she  is very nice girl . I am self observe person </p>
+                    <a href="#">Learn more </a>
+                </div>
+
+            </div>
+        </div>
+    </div>
+    <!-- --------------------------portfolio---------------------------------- -->
+    <div id="portfolio">
+        <div class="container">
+            <h1 class="sub-title">My work</h1>
+            <div class="work-list">
+                <div class="work">
+                    <img src="images/work-1.png" >
+                    <div class="layer">
+                        <h3>Social Media App</h3>
+                        <p> the app connect you to talented people around the world. download it from play store</p> <!-- Corrected the typo -->
+                        <a href="#"><i class="fas fa-arrow-up"></i></a> <!-- Corrected the class name -->
+                    </div>
+                    
+                </div>
+                <div class="work">
+                    <img src="images/work-2.png" >
+                    <div class="layer">
+                        <h3>Music App</h3>
+                        <p> the app connects you to talented people around the world. download it from play store</p> <!-- Corrected the typo -->
+                        <a href="#"><i class="fas fa-arrow-up"></i></a> <!-- Corrected the class name -->
+                    </div>
+                </div>
+                <div class="work">
+                    <img src="images/work-3.png" >
+                    <div class="layer">
+                        <h3>Online Shopping App</h3>
+                        <p> the app connects you to talented people around the world. download it from play store</p> <!-- Corrected the typo -->
+                        <a href="#"><i class="fas fa-arrow-up"></i></a> <!-- Corrected the class name -->
+                    </div>
+                </div>
+            </div>
+            <a href="#" class="btn">See more</a>
+
+        </div>
+
+    </div>
+    <!-- -------------------contact------------------- -->
+    <div id="contact">
+        <div class="container">
+            <div class="row">
+                <div class="contact-left">
+                    <h1 class="sub-title">Contact Me</h1>
+                    <p><i class="fas fa-paper-plane"></i>chitrabsacet14@gmail.com</p> <!-- Corrected the class name -->
+                    <p><i class="fas fa-phone-square"></i>9997243500</p> <!-- Corrected the class name -->
+                    <div class="social-icons">
+                        <a href=""><i class="fab fa-facebook-square"></i></a> <!-- Corrected the class name -->
+                        <a href=""><i class="fab fa-twitter-square"></i></a>
+                        <a href=""><i class="fab fa-instagram"></i></a>
+                        <a href=""><i class="fab fa-linkedin"></i></a>
+                    </div>
+                    <a href="images/my-cv.pdf" download class="btn btn2">Download CV</a>
+                </div>
+                <div class="contact-right">
+                    <form name="submit-to-google-sheet">
+                        <input type="text" name="Name" placeholder="Your Name" required>
+                        <input type="email" name="email" placeholder="Your Email" required>
+                        <textarea name="Message" rows="6" placeholder="Your Message"></textarea> <!-- Corrected the name attribute -->
+                        <button type="submit" class="btn btn2">Submit</button>
+                    </form>
+                    <span id="msg"></span>
+                </div>
+
+            </div>
+        </div>
+    </div>
+
+   <script>
+   var tablinks = document.getElementsByClassName("tab-links");
+var tabcontents = document.getElementsByClassName("tab-contents");
+
+function opentab(tabname) {
+    for (var i = 0; i < tablinks.length; i++) {
+        tablinks[i].classList.remove("active-link");
+    }
+    for (var i = 0; i < tabcontents.length; i++) {
+        tabcontents[i].classList.remove("active-tab");
+    }
+    event.currentTarget.classList.add("active-link");
+    document.getElementById(tabname).classList.add("active-tab");
+}
+
+
+   </script>
+   <script>
+    var sidemenu = document.getElementById("sidemenu");
+    function openmenu(){
+        sidemenu.style.right = "0"
+    }
+    function closemenu(){
+        sidemenu.style.right = "-200px"
+    }
+   </script>
+   <script>
+    // URL of your Google Apps Script web app
+const scriptURL = 'https://script.google.com/macros/s/AKfycby9unso0wZkU27DgBpOIXOAprVp0XirUKRh1F9ced9xsSyoGvvgu0Q2U-PzmRWBeIOb1g/exec';
+
+// Accessing the form by its name
+const form = document.forms['submit-to-google-sheet'];
+
+// Selecting the element to display the message
+const msg = document.getElementById("msg");
+
+// Adding event listener for form submission
+form.addEventListener('submit', e => {
+  // Preventing the default form submission behavior
+  e.preventDefault();
+
+  // Sending form data to Google Sheets via fetch
+  fetch(scriptURL, { method: 'POST', body: new FormData(form)})
+    .then(response => {
+      // Displaying success message
+      msg.innerHTML = "Message sent successfully";
+
+      // Clearing the message after 5 seconds
+      setTimeout(function(){
+        msg.innerHTML = "";
+      }, 5000);
+
+      // Resetting the form fields after successful submission
+      form.reset();
+    })
+    .catch(error => {
+      // Displaying error message in case of fetch failure
+      console.error('Error!', error.message);
+    });
+});
+
+  </script>
+    
+</body>
+</html>
